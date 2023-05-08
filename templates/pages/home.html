@@ -6,5 +6,12 @@
 {% block content %}
 <h1>Home</h1>
 <h2>Welcome to Hedgehog Blog!</h2>
+<p>
+    {% if user.is_authenticated %}
+    Hello, {{ user.username }}
+    {% else %}
+    Hello, guest!
+    {% endif %}
+</p>
 
 {% endblock content %}
