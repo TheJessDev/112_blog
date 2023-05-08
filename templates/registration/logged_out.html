@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Logged Out{% endblock title %}
+
+
+{% block content %}
+
+<h1>Logged Out of Hedgehog Blog</h1>
+<p>You have successfully logged out of you account.</p>
+<br/>
+<h5>Need to Log in?</h5>
+<p><a href="{% url 'login' %}">Click here</a></p>
+
+{% endblock content %}
